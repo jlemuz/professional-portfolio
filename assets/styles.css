@@ -1,0 +1,220 @@
+body, html{
+    margin: 0;
+    background-color:  #ebebeb ;
+    
+}
+
+header{
+    display: grid;
+    grid-template-columns: 30% auto;
+    grid-template-areas: "header-title header-nav";
+    /* background-color: rgba(160, 233, 255, 0.5); */
+}
+
+.header-title{
+    display: flex;
+    grid-area: header-title;
+    /* background-color: rgba(115, 209, 238, 0.7); */
+    padding-left: 30%;
+    font-size: xx-large;
+    margin-bottom: 10px;
+    overflow: inherit;
+    word-wrap: break-word;
+
+}
+
+.header-nav{
+    display: flex;
+    padding-left: 30%;
+    justify-content: flex-end;
+    grid-area: header-nav;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header-nav > a{
+    margin: 10px;
+    padding-right: 10px;
+}
+
+.subtitle{
+    display: grid;
+    grid-template-columns: 30% auto;
+    height: 20vh;
+    grid-template-areas: "jlemuz subtext";
+    padding-left: 6%;
+    background-image: url("./images/comp.jpg");
+    background-position: center;
+    background-size: cover ;
+}
+
+.jlemuz{
+    grid-area: jlemuz;
+    height: 20vh;
+    /* background-color: rgba(115, 209, 238, 0.7); */
+
+}
+
+.subtitle-text{
+    grid-area: subtext;
+    /* background-color: rgba(115, 209, 238, 0.7); */
+    width: 90%;
+    text-align: center;
+;
+
+}
+
+.about-container{
+    display: grid;
+    grid-template-columns: 15% auto;
+    grid-template-areas: "about-title about-text";
+    padding-top: 10px;
+    height: 10vh;
+    margin-bottom: 5vh;
+    margin-right: 5%;
+}
+
+.about-title{
+    text-align: right;
+    grid-area: about-title;
+    border-right: blue solid 1px;
+    padding-right: 10px;
+    font-size: xx-large;
+    word-wrap: break-word;
+    font-weight: bold;
+    padding-left: 20%;
+
+}
+
+.about-text{
+    grid-area: about-text;
+    padding-left: 10px;
+}
+
+.work-container{
+    display: grid;
+    grid-template-columns: 15% auto;
+    grid-template-areas: "work-title work-items";
+    padding-top: 10px;
+    margin-right: 5%;
+
+}
+
+.work-title{
+    text-align: right;
+    grid-area: work-title;
+    border-right: blue solid 1px;
+    padding-right: 10px;
+    font-size: xx-large;
+    word-wrap: break-word;
+    font-weight: bold;
+
+}
+
+.work-items{
+    grid-area: work-items;
+    padding-left: 10px;
+    height: 100%;
+}
+
+.items-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+
+}
+
+.items-container > div {
+    background-color: rgba(115, 209, 238, 0.7);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+
+.item1{
+    grid-area: 1 / 1 / span 16 / span 2;
+    position: relative;
+    background-image: url("./images/flight.jpg");
+    background-size: cover;
+    background-position-y: 60%;
+}
+
+.item2{
+    position: relative;
+    background-image: url("./images/travel.jpg");
+    background-size: cover;
+    height: 10vh;
+    background-position-y: 60%;
+}
+
+
+.item3{
+    position: relative;
+    height: 10vh;
+      background-image: url("./images/proj3.jpg");
+    background-size: cover;
+    background-position-y: 60%;
+}
+
+.item4{
+    position: relative;
+    height: 10vh;
+      background-image: url("./images/proj4.jpg");
+    background-size: cover;
+    background-position-y: 60%;
+}
+
+.item5{
+    position: relative;
+    height: 10vh;
+      background-image: url("./images/proj5.jpg");
+    background-size: cover;
+    background-position-y: 60%;
+}
+
+
+.items-container>div:hover{
+    opacity: 45%;
+}
+.contact-container{
+    display: grid;
+    grid-template-columns: 15% auto;
+    grid-template-areas: "contact-title contact-items";
+    padding-top: 10px;
+    height: 10vh;
+    margin-right: 5%;
+
+}
+
+.contact-title{
+    padding-left: 15%;
+    text-align: right;
+    grid-area: contact-title;
+    border-right: blue solid 1px;
+    padding-right: 10px;
+    font-size: xx-large;
+    word-wrap: break-word;
+    font-weight: bold;
+
+}
+
+.contact-items{
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact-items > a{
+    text-decoration: underline;     
+    text-decoration-color: blue;  
+}
+
+.item-title{
+    text-align: left;
+    position:absolute;
+    bottom: 10%;
+    left:0;
+}
