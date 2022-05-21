@@ -9,4 +9,4 @@ This page has been updated with the projects 1 and 2 from the course.
 <img src="./assets/images/portfolio.PNG">
 
 ## Deployed Link  
-https://jlemuz.github.io/professional-portfolio/
+https://jlemuz.github.io/professional-portfolio-fullstack/
